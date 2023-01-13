@@ -91,5 +91,6 @@ footer button {
     color: #000000;
     cursor: pointer;  
     font-size: 4vh;
-    font-weight: 600;  
+    font-weight: 600;
+    margin-top: 2vh;
 }
