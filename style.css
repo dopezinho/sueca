@@ -76,7 +76,7 @@ main h4 {
 
 
 footer {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     height: 20vh;
     justify-content: center;
