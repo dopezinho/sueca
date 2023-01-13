@@ -29,35 +29,35 @@ time, mark, audio, video {
 
 body {
     background-color: #5992edcb;
-    color: #c9f455c0;
+    height: 100vh;
 }
 
 header {
     align-items: center;
+    color: #c9f455c0;
     display: flex;
     font-size: 10vh;
+    font-weight: 600;
     height: 20vh;
     justify-content: center;
 }
 
 main {
     align-items: center;
-    border: 2px solid #000000;
-    border-radius: 12px;
-    background-color: #f0f8ff;   
-    color: red;
     display: flex;
     height: 60vh;
     justify-content: center;
-    margin: 0 20vh;
     text-transform: uppercase;
 }
 
-/*
+
 #cardSlot {
-    
+    background-color: #f0f8ff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 10vh 12vh;
 }
-*/
+
 
 main h3 {
     font-size: 6vh;
@@ -65,7 +65,7 @@ main h3 {
 }
 
 main h4 {
-    font-size: 10vh;
+    font-size: 8vh;
 }
 
 
@@ -79,8 +79,8 @@ footer {
 
 footer button {
     background-color: transparent;
+    border: none;
     border-radius: 8px;
-    color: #000000;
-    height: 6vh;
-    width: 8vh;    
+    color: #000000;    
+    font-size: 4vh;   
 }
