@@ -63,17 +63,15 @@ main {
 
 
 main h3 {
-    font-size: 5vh;
+    font-size: 10vh;
     margin-left: 1.5vh;
 }
 
 main h4 {
-    font-size: 8vh;
+    font-size: 4vh;
     margin-left: 1vh;
     margin-top: -2vh;
 }
-
-
 
 footer {
     align-items: flex-start;
