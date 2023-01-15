@@ -306,10 +306,10 @@ footer button {
 }
 
 #outerLetter {
-    margin: 0;
+    margin-left: 1vh;
     display: inline;
     width: 9vh;
-    font-size: 8vh;
+    font-size: 6vh;
 }
 
 #nipe {
@@ -319,26 +319,10 @@ footer button {
     margin-top: 0px;
 }
 
-p {
-    margin: 0;
-}
-
-#outerLetterEnd {
-    margin: 0;
-    display: inline;
-    width: 9vh;
-    font-size: 8vh;
-    rotate: 180deg;
-}
-
-#outerLetter {
-    margin-left: 1vh;
-}
-
 #outerLetterEnd {
     margin-right: 1vh;
-}
-
-#nipe {
-    margin-left: 0;
+    display: inline;
+    width: 9vh;
+    font-size: 6vh;
+    rotate: 180deg;
 }
