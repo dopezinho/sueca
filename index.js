@@ -19,6 +19,7 @@ class Deck {
     }
 
     draw() {
+        buttom.innerHTML = 'draw'
         if (this.deck.length >= 1) {
             let card = new Card;
             let prosseguir = false;
@@ -29,7 +30,6 @@ class Deck {
                         prosseguir = true
                         {break}
                     }else if (this.deck[i] == 'joker') {
-                        console.log('oi');
                         prosseguir = true
                         {break}
                     }
@@ -51,18 +51,16 @@ class Deck {
                         }
                     }
                 }
-                console.log(this.deck.length); 
                 return [card.valor, card.nipe];
             }
         }else {
-            const cardSlot = document.getElementById('cardSlot');
+            let cardSlot = document.getElementById('main');
             cardSlot.innerHTML = ''
             let newCard = document.createElement('div');
             cardSlot.appendChild(newCard);
             newCard.innerHTML = 'Acabou o Baralho, Reembaralhe';
             const buttom = document.getElementById('draw');
-            buttom.innerHTML = 'Embaralhar';
-            
+            buttom.innerHTML = 'Shuffle';
             };
         };
 }
@@ -90,18 +88,57 @@ class Card {
     }
 
     displayCard(value, nipe) {
-        const cardSlot = document.getElementById('cardSlot');
-        cardSlot.innerHTML = ''
-        let newCard = document.createElement('div');
-        cardSlot.appendChild(newCard);
-        if (value == 'joker') {
-            newCard.innerHTML = `<h3>${value}</h3>`
-        }else {
-            newCard.innerHTML = `<h3>${value}</h3><h4>${nipe}</h4>`
+        this.innerTemplate(value, nipe, 'main')
+        }
+        
+    innerTemplate(value, nipe, local) {
+        let body = document.getElementById(`${local}`);
+        switch (value) {
+            case 'a':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '2':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '3':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a" style="visibility: hidden;">${nipe}</div><div class="b" style="visibility: hidden;">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g" style="visibility: hidden;">${nipe}</div><div class="h" style="visibility: hidden;">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '4':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '5':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateA5329" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c" style="visibility: hidden;">${nipe}</div><div class="d" style="visibility: hidden;">${nipe}</div><div class="e" style="visibility: hidden;">${nipe}</div><div class="f" style="visibility: hidden;">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '6':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k" style="visibility: hidden;">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '7':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div><div class="l" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '8':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template4678" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="i" style="visibility: hidden;">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div><div class="k">${nipe}</div><div class="l">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '9':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template105" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i">${nipe}</div><div class="j" style="visibility: hidden;">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case '10':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="template105" class="template"><div class="a">${nipe}</div><div class="b">${nipe}</div><div class="c">${nipe}</div><div class="d">${nipe}</div><div class="e">${nipe}</div><div class="f">${nipe}</div><div class="g">${nipe}</div><div class="h">${nipe}</div><div class="i">${nipe}</div><div class="j">${nipe}</div></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case 'j':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateJ" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case 'q':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateQ" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case 'k':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p><p id="nipe">${nipe}</p></div><div id="templateK" class="template"></div><div id="outerLetterEnd"><p>${value}</p><p id="nipe">${nipe}</p></div></div>`
+                break;
+            case 'joker':
+                body.innerHTML = `<div id="outerTemplate"><div id="outerLetter"><p>${value}</p></div><div id="templateJoker" class="template"></div><div id="outerLetterEnd"><p>${value}</p></div></div>`
+                break;
         }
     }
 }
-
 
 function choose(choices) {
     var index = Math.floor(Math.random() * choices.length);
@@ -115,4 +152,7 @@ const buttom = document.getElementById('draw');
 
 buttom.addEventListener('click', function() {
     deck.draw();
+    if (buttom.innerHTML == 'Shuffle') {
+        deck.resetDeck();
+    }
 })
