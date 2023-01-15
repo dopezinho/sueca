@@ -305,7 +305,8 @@ footer button {
 }
 
 #outerLetter {
-    margin-left: 1vh;
+    margin-left: 2vh;
+    margin-top: 1vh;
     display: inline;
     width: 9vh;
     font-size: 6vh;
@@ -314,12 +315,12 @@ footer button {
 #nipe {
     margin: 0;
     display: inline;
-    font-size: 50px;
-    margin-top: 0px;
+    font-size: 6vh;
 }
 
 #outerLetterEnd {
-    margin-right: 1vh;
+    margin-right: 2vh;
+    margin-bottom: 1vh;
     display: inline;
     width: 9vh;
     font-size: 6vh;
