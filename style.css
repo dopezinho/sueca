@@ -72,10 +72,9 @@ footer {
 footer button {
     background-color: transparent;
     border: none;
-    border-radius: 8px;
     color: #722aa5;
     cursor: pointer;  
-    font-size: 4vh;
+    font-size: 5vh;
     font-weight: 600;
     margin-top: 5vh;
 }
