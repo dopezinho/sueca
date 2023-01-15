@@ -51,10 +51,6 @@ main {
     text-transform: uppercase;
 }
 
-
-
-
-
 main h3 {
     font-size: 5vh;
     margin-left: 1.5vh;
@@ -84,11 +80,7 @@ footer button {
     margin-top: 5vh;
 }
 
-
-
-
-
-
+/*  CARDS  */
 
 #template105 {
     display: grid;
@@ -317,7 +309,7 @@ footer button {
     margin: 0;
     display: inline;
     width: 9vh;
-    font-size: 45px;
+    font-size: 8vh;
 }
 
 #nipe {
@@ -335,6 +327,18 @@ p {
     margin: 0;
     display: inline;
     width: 9vh;
-    font-size: 60px;
+    font-size: 8vh;
     rotate: 180deg;
+}
+
+#outerLetter {
+    margin-left: 1vh;
+}
+
+#outerLetterEnd {
+    margin-right: 1vh;
+}
+
+#nipe {
+    margin-left: 0;
 }
