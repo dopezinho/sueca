@@ -45,7 +45,7 @@ header {
 }
 
 header h1 {
-    background: #2c1010;
+    background: #2c1010d7;
     border-radius: 8px;
     padding: 0 2vh 0 2vh;
 }
@@ -66,7 +66,7 @@ footer {
 }
 
 footer button {    
-    background: rgb(44, 16, 16);
+    background: #2c1010d7;
     border: none;
     border-radius: 8px;
     color: #f1e3be;
