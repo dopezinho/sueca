@@ -322,12 +322,12 @@ footer button {
 
 /*  MEDIA KIT  */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:600px) {
     #outerLetter {
-        margin-left: 5vh;
+        font-size: 8vh;
     }
     
     #outerLetterEnd {
-        margin-right: 5vh;
+        font-size: 8vh;
     }
 }
