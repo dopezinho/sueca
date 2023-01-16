@@ -319,3 +319,15 @@ footer button {
     rotate: 180deg;
     width: 9vh;
 }
+
+/*  MEDIA KIT  */
+
+@media only screen and (max-width:320px) {
+    #outerLetter {
+        margin-left: 5vh;
+    }
+    
+    #outerLetterEnd {
+        margin-right: 5vh;
+    }
+}
