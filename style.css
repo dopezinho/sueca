@@ -324,10 +324,20 @@ footer button {
 
 @media only screen and (max-width:600px) {
     #outerLetter {
-        font-size: 8vh;
+        font-size: 10vh;
+        margin-left: 0;
     }
     
     #outerLetterEnd {
-        font-size: 8vh;
+        font-size: 10vh;
+        margin-right: 0;
     }
+}
+
+/* WEBKIT */
+
+body,
+body::selection {  
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
