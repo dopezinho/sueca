@@ -305,12 +305,7 @@ footer button {
     width: 9vh;
 }
 
-/*
-#nipe {
-    display: column;
-    font-size: 6vh;
-}
-*/
+
 
 #outerLetterEnd {
     display: column;
@@ -324,13 +319,21 @@ footer button {
 
 /*  MEDIA KIT  */
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:580px) {
     #outerLetter {
         font-size: 8vh;
+    }
+
+    #outerLetter :nth-child(1){
+        margin-left: 5vh;
     }
     
     #outerLetterEnd {
         font-size: 8vh;
+    }
+
+    #outerLetter :nth-child(1){
+        margin-right: 5vh;
     }
 
 }
