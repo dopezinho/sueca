@@ -322,21 +322,17 @@ footer button {
 
 /*  MEDIA KIT  */
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
     #outerLetter {
-        font-size: 8vh;
+        font-size: 10vh;
         margin: 0 0 0 0.5vh;
     }
     
     #outerLetterEnd {
-        font-size: 8vh;
+        font-size: 10vh;
         margin: 0 0.5vh 0 0;
     }
 
-    #nipe {
-        display: inline;
-        font-size: 1vh;
-    }
 }
 
 /* WEBKIT */
