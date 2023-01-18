@@ -333,6 +333,17 @@ footer button {
 
 }
 
+@media only screen and (min-width:500px) {
+    #outerLetter {
+        margin-left: 2vh;
+    }
+    
+    #outerLetterEnd {
+        margin-right: 2vh;
+    }
+
+}
+
 /* WEBKIT */
 
 body,
