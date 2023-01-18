@@ -305,10 +305,12 @@ footer button {
     width: 9vh;
 }
 
+/*
 #nipe {
-    display: inline;
+    display: column;
     font-size: 6vh;
 }
+*/
 
 #outerLetterEnd {
     display: column;
@@ -333,7 +335,7 @@ footer button {
 
 }
 
-@media only screen and (min-width:500px) {
+@media only screen and (min-width:600px) {
     #outerLetter {
         margin-left: 2vh;
     }
