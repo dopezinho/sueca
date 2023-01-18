@@ -332,6 +332,11 @@ footer button {
         font-size: 8vh;
         margin: 0 0.5vh 0 0;
     }
+
+    #nipe {
+        display: inline;
+        font-size: 1vh;
+    }
 }
 
 /* WEBKIT */
