@@ -297,7 +297,7 @@ footer button {
 }
 
 #outerLetter {
-    display: inline;
+    display: column;
     font-size: 6vh;
     font-weight: 400;
     margin-left: 2vh;
@@ -311,7 +311,7 @@ footer button {
 }
 
 #outerLetterEnd {
-    display: inline;
+    display: column;
     font-size: 6vh;
     font-weight: 400;
     margin-right: 2vh;
@@ -322,14 +322,14 @@ footer button {
 
 /*  MEDIA KIT  */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:500px) {
     #outerLetter {
-        font-size: 10vh;
+        font-size: 8vh;
         margin: 0 0 0 0.5vh;
     }
     
     #outerLetterEnd {
-        font-size: 10vh;
+        font-size: 8vh;
         margin: 0 0.5vh 0 0;
     }
 
