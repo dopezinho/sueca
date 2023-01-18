@@ -300,7 +300,7 @@ footer button {
     display: column;
     font-size: 6vh;
     font-weight: 400;
-    margin-left: 2vh;
+    margin-left: 0vh;
     margin-top: 1vh;
     width: 9vh;
 }
@@ -314,7 +314,7 @@ footer button {
     display: column;
     font-size: 6vh;
     font-weight: 400;
-    margin-right: 2vh;
+    margin-right: 0vh;
     margin-bottom: 1vh;
     rotate: 180deg;
     width: 9vh;
