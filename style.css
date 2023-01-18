@@ -322,7 +322,6 @@ footer button {
 @media only screen and (max-width:580px) {
     #outerLetter {
         font-size: 8vh;
-        margin-left: 0.5vh;
     }
 
     #outerLetter :nth-child(1){
@@ -331,13 +330,15 @@ footer button {
     
     #outerLetterEnd {
         font-size: 8vh;
-        margin-right: 0.5vh;
     }
 
     #outerLetter :nth-child(1){
         margin-right: 2vh;
     }
 
+    #nipe {
+        margin: 1vh;
+    }
 }
 
 @media only screen and (min-width:600px) {
