@@ -337,6 +337,11 @@ footer button {
     #outerLetterEnd :nth-child(1){
         margin-right: 2vh;
     }
+
+    #outerTemplate {
+        border: 1px solid red;
+        width: 39vh;
+    }
 }
 
 @media only screen and (min-width:600px) {
