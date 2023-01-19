@@ -325,7 +325,7 @@ footer button {
         width: 10vh;
     }
 
-    #outerLetter :nth-child(1){
+    #outerLetter :nth-child(1) {
         margin-left: 2vh;
     }
     
@@ -334,7 +334,8 @@ footer button {
         width: 10vh;
     }
 
-    #outerLetterEnd :nth-child(1){
+    #outerLetterEnd :nth-child(1) {
+        color: red;
         margin-right: 2vh;
     }
 
