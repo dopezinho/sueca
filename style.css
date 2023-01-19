@@ -326,7 +326,7 @@ footer button {
     }
 
     #outerLetter :nth-child(1) {
-        margin-left: 2vh;
+        margin-left: 3vh;
     }
     
     #outerLetterEnd {
@@ -335,8 +335,7 @@ footer button {
     }
 
     #outerLetterEnd :nth-child(1) {
-        color: red;
-        margin-right: 2vh;
+        margin-right: 3vh;
     }
 
     #outerTemplate {
