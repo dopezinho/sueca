@@ -317,6 +317,36 @@ footer button {
     width: 9vh;
 }
 
+#nipe{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*  REGRAS  */
+
+#pValue{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.regra {
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    font-size: 4vh;
+    font-weight: 600;
+    max-width: 50vh;
+    padding: 10vh;
+    position: absolute;
+    right: 31%;
+    rotate: 90deg;
+    text-align: center;
+    top: 38%;
+}
+
+
 /*  MEDIA KIT  */
 
 @media only screen and (max-width:580px) {
@@ -359,20 +389,4 @@ body,
 body::selection {  
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-}
-
-#nipe, #pValue{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.regra {
-    position: absolute;
-    font-size: large;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.6);
-    max-width: 50vh;
-    text-align: center;
 }
